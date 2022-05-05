@@ -32,7 +32,8 @@ namespace Exercises
             // Replace the exception statement below with your code!
             //throw new NotImplementedException();
             char[] sentenceArray = sentence.ToCharArray();
-            return Array.Reverse(sentenceArray);
+            Array.Reverse(sentenceArray);
+            return new string(sentenceArray);
         }
 
         public int CountLinuxUsers(List<User> users)
