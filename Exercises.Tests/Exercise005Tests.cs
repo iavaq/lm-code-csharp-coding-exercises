@@ -65,5 +65,23 @@ namespace Exercises.Tests
         {
             Exercise005.IsPangram("the 1 quick brown fox jumps over the 2 lazy dogs").Should().Be(true);
         }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_Text_With_Numbers_Only()
+        {
+            Exercise005.IsPangram("1234").Should().Be(false);
+        }
+
+        [Test]
+        public void IsPangram_Should_Return_False_For_Text_With_Spaces_Only()
+        {
+            Exercise005.IsPangram("       ").Should().Be(false);
+        }
+        
+        [Test]
+        public void IsPangram_Should_Return_False_For_Null()
+        {
+            Exercise005.IsPangram(null).Should().Be(false);
+        }
     }
 }

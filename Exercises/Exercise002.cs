@@ -7,22 +7,12 @@ namespace Exercises
     {
         public bool IsFromManchester(Person person )
         {
-            // Replace the exception statement below with your code!
-            //throw new NotImplementedException();
-            if (person.City == "Manchester")
-                return true;
-            else
-                return false;
+            return (person.City.Equals("Manchester"));   
         }
 
         public bool CanWatchFilm(Person person, int ageLimit)
         {
-            // Replace the exception statement below with your code!
-            //throw new NotImplementedException();
-            if (person.Age >= ageLimit)
-                return true;
-            else
-                return false;
-        }
+            return (person.Age >= ageLimit);
+        }       
     }
 }
